@@ -1,0 +1,27 @@
+[package]
+name = "examples"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "full-example"
+path = "src/main.rs"
+
+[dependencies]
+dr-metrix-core     = { path = "../dr-metrix-core" }
+dr-metrix-axum     = { path = "../dr-metrix-axum" }
+dr-metrix-postgres = { path = "../dr-metrix-postgres" }
+dr-metrix-redis    = { path = "../dr-metrix-redis" }
+dr-metrix-mongo    = { path = "../dr-metrix-mongo" }
+
+tokio            = { workspace = true }
+axum             = { workspace = true }
+tower-http       = { workspace = true }
+serde_json       = { workspace = true }
+tracing          = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow           = { workspace = true }
+fred             = { workspace = true }
+mongodb          = { workspace = true }
+deadpool-diesel  = { workspace = true }

@@ -1,0 +1,13 @@
+[package]
+name = "dr-metrix-redis"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dr-metrix-core = { path = "../dr-metrix-core" }
+prometheus   = { workspace = true }
+tracing      = { workspace = true }
+tokio        = { workspace = true }
+async-trait  = { workspace = true }
+fred         = { workspace = true }

@@ -1,0 +1,23 @@
+[package]
+name = "dr-metrix-postgres"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[features]
+default      = ["diesel-async"]
+diesel-async = ["dep:diesel", "dep:deadpool-diesel"]
+r2d2         = ["dep:diesel", "diesel/r2d2"]
+sea-orm      = ["dep:sea-orm"]
+
+[dependencies]
+dr-metrix-core  = { path = "../dr-metrix-core" }
+prometheus    = { workspace = true }
+tracing       = { workspace = true }
+tokio         = { workspace = true }
+async-trait   = { workspace = true }
+serde_json    = { workspace = true }
+
+diesel          = { workspace = true, optional = true }
+deadpool-diesel = { workspace = true, optional = true }
+sea-orm         = { workspace = true, optional = true }
