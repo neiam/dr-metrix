@@ -1,8 +1,11 @@
 [package]
-name = "dr-metrix-core"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
+name         = "dr-metrix-core"
+version.workspace  = true
+edition.workspace  = true
+license.workspace  = true
+repository.workspace = true
+description  = "Core traits and types for the dr-metrix Prometheus metrics library"
+keywords     = ["prometheus", "metrics", "observability", "axum"]
 
 [dependencies]
 prometheus   = { workspace = true }

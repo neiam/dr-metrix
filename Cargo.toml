@@ -10,10 +10,11 @@ members = [
 resolver = "2"
 
 [workspace.package]
-version = "0.1.0"
-edition = "2021"
-license = "MIT"
-authors = ["Gabe <gabe@neiam.org>"]
+version      = "0.1.0"
+edition      = "2021"
+license      = "MIT"
+authors      = ["Gabe <gabe@neiam.org>"]
+repository   = "https://github.com/neiam/dr-metrix"
 
 [workspace.dependencies]
 prometheus = { version = "0.13", features = ["process"] }

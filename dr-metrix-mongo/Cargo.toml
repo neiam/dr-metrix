@@ -1,11 +1,14 @@
 [package]
-name = "dr-metrix-mongo"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
+name         = "dr-metrix-mongo"
+version.workspace  = true
+edition.workspace  = true
+license.workspace  = true
+repository.workspace = true
+description  = "MongoDB Prometheus metrics collector for dr-metrix"
+keywords     = ["prometheus", "mongodb", "metrics", "mongo"]
 
 [dependencies]
-dr-metrix-core = { path = "../dr-metrix-core" }
+dr-metrix-core = { path = "../dr-metrix-core", version = "0.1.0" }
 prometheus   = { workspace = true }
 tracing      = { workspace = true }
 tokio        = { workspace = true }

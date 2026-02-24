@@ -1,8 +1,11 @@
 [package]
-name = "dr-metrix-postgres"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
+name         = "dr-metrix-postgres"
+version.workspace  = true
+edition.workspace  = true
+license.workspace  = true
+repository.workspace = true
+description  = "PostgreSQL Prometheus metrics collector for dr-metrix"
+keywords     = ["prometheus", "postgres", "metrics", "diesel"]
 
 [features]
 default      = ["diesel-async"]
@@ -11,7 +14,7 @@ r2d2         = ["dep:diesel", "diesel/r2d2"]
 sea-orm      = ["dep:sea-orm"]
 
 [dependencies]
-dr-metrix-core  = { path = "../dr-metrix-core" }
+dr-metrix-core  = { path = "../dr-metrix-core", version = "0.1.0" }
 prometheus    = { workspace = true }
 tracing       = { workspace = true }
 tokio         = { workspace = true }
